@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zaka Cursos</title>
+    </head>
+
+    <body>
+        <form id="form">
+            <h1>Preencha o formulário de Candidatura:</h1>
+            <label>Nome:</label>
+            <input type="text" id="fname" placeholder="Digite o seu nome:" />
+            <label>Sobrenome:</label>
+            <input type="text" id="fname2" placeholder="Digite o seu sobrenome:" />
+            <br /><br />
+
+            <label>Email:</label>
+            <input type="email" id="femail" placeholder="Digite seu email:" />
+            <br /><br />
+
+            <label for="curso">Curso:</label>
+            <select id="curso" name="cursolist" for="">
+                <option value="java">Java</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="php">PHP</option>
+                <option value="C#">C#</option>
+            </select>
+            <br /><br />
+
+            <div for="checkbox">
+                <input type="checkbox" id="checkbox" name="exp1" value="exp1" />
+                <label for="exp1">Sem Experiência</label>
+                <input type="checkbox" id="checkbox" name="exp2" value="exp2" />
+                <label for="exp2">Júnior</label>
+                <input type="checkbox" id="checkbox" name="exp3" value="exp3" />
+                <label for="exp3">Pleno</label>
+                <input type="checkbox" id="checkbox" name="exp4" value="exp4" />
+                <label for="exp4">Sênior</label>
+            </div>
+            <br />
+
+            <div id="rad">
+                <label for="rad1">
+                    <input type="radio" id="rad1" name="devweb" checked />Front-end
+                </label>
+                <label for="rad2">
+                    <input type="radio" id="rad2" name="devweb" />Back-end
+                </label>
+                <label for="rad3">
+                    <input type="radio" id="rad3" name="devweb" />Fullstack
+                </label>
+            </div>
+            <br />
+            <button onclick="botao()" id="btn">Enviar</button>
+            <button onclick="limpar()" id="btn-clear">Limpar</button>
+        </form>
+
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="rodape">
+                <p class="footer-texto">
+                    Criação e Desenvolvimento:
+                    <a href="https://github.com/Jomarfranca" target="_blank"
+                        >Jomar A. França
+                    </a>
+                    2022 -
+                    <a
+                        href="https://www.linkedin.com/in/jomar-almeida-franca/"
+                        target="_blank"
+                        >Front End Developer</a
+                    >
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
