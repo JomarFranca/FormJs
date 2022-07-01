@@ -9,8 +9,8 @@
     </head>
 
     <body>
-        <form id="form">
-            <h1>Preencha o formulário de Candidatura:</h1>
+        <form action="teste.php" onsubmit="botao(event)" id="form">
+            <h1>Preencha o Formulário de Candidatura:</h1>
             <label>Nome:</label>
             <input type="text" id="fname" placeholder="Digite o seu nome:" />
             <label>Sobrenome:</label>
@@ -31,14 +31,14 @@
             </select>
             <br /><br />
 
-            <div id="exper">
-                <input type="checkbox" id="exp1" name="exp1" value="Sem Experiência" />
+            <div id="div-exper">
+                <input type="checkbox" id="exp1" name="exper" value="Sem Experiência" />
                 <label for="exp1">Nunca Trabalhou</label>
-                <input type="checkbox" id="exp2" name="exp2" value="Júnior"/>
+                <input type="checkbox" id="exp2" name="exper" value="Júnior"/>
                 <label for="exp2">Júnior</label>
-                <input type="checkbox" id="exp3" name="exp3" value="Pleno"/>
+                <input type="checkbox" id="exp3" name="exper" value="Pleno"/>
                 <label for="exp3">Pleno</label>
-                <input type="checkbox" id="exp4" name="exp4" value="Sênior"/>
+                <input type="checkbox" id="exp4" name="exper" value="Sênior"/>
                 <label for="exp4">Sênior</label>
             </div>
             <br />
@@ -55,9 +55,18 @@
                 </label>
             </div>
             <br />
-            <button onclick="botao()" id="btn">Enviar</button>
+            <button id="btn">Enviar</button>
             <button onclick="limpar()" id="btn-clear">Limpar</button>
+            <br><br><hr><br><br>
+            <div id="resultado" class="resultado" style="display:none">
+                <p id="nome"></p>
+                <p id="mail"></p>
+                <p id="fcurso"></p>
+                <p id="experir"></p>
+                <p id="conhecimento"></p>
+            </div>
         </form>
+
 
         <script src="script.js"></script>
 
