@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Zaka Cursos</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
@@ -21,23 +22,23 @@
             <br /><br />
 
             <label for="curso">Curso:</label>
-            <select id="curso" name="cursolist" for="">
-                <option value="java">Java</option>
-                <option value="javascript">JavaScript</option>
-                <option value="python">Python</option>
-                <option value="php">PHP</option>
+            <select id="curso" name="cursolist">
+                <option value="Java">Java</option>
+                <option value="Javascript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
                 <option value="C#">C#</option>
             </select>
             <br /><br />
 
-            <div for="checkbox">
-                <input type="checkbox" id="checkbox" name="exp1" value="exp1" />
-                <label for="exp1">Sem Experiência</label>
-                <input type="checkbox" id="checkbox" name="exp2" value="exp2" />
+            <div id="exper">
+                <input type="checkbox" id="exp1" name="exp1" value="Sem Experiência" />
+                <label for="exp1">Nunca Trabalhou</label>
+                <input type="checkbox" id="exp2" name="exp2" value="Júnior"/>
                 <label for="exp2">Júnior</label>
-                <input type="checkbox" id="checkbox" name="exp3" value="exp3" />
+                <input type="checkbox" id="exp3" name="exp3" value="Pleno"/>
                 <label for="exp3">Pleno</label>
-                <input type="checkbox" id="checkbox" name="exp4" value="exp4" />
+                <input type="checkbox" id="exp4" name="exp4" value="Sênior"/>
                 <label for="exp4">Sênior</label>
             </div>
             <br />

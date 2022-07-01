@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    padding: 2rem;
+}
+
+form {
+    padding: 0,5rem;
+}
+
+/* RODAPÉ */
+
+footer {
+    width: auto;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-texto {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.footer-texto a {
+    color: #7ac9e9;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.footer-texto a:hover {
+    color: #0a4d99;
+    text-decoration: none;
+}
