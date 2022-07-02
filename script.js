@@ -16,24 +16,32 @@ function botao(event) {
     var dev = document.getElementById("curso").value;
         document.getElementById("resultado").style.display='block';
             document.getElementById("fcurso").innerHTML = "Experiência: " + dev;
-            // console.log("qualquer coisa", document.getElementsByName("exper"));
 
 
-    var exp = document.getElementById("exp1").value;
+
+    var exp = document.getElementsByName("exper")
+    var xp = "";
+    var traco = "-";
+        for (let i = 0; i < exp.length; i++) {
+            if(exp[i].checked) {
+                xp = xp + exp[i].value + " ";
+            }
+        }    
+        console.log("qualquer coisa", xp);
         document.getElementById("resultado").style.display='block';
-            document.getElementById("experir").innerHTML = "Curso: " + exp;
+            document.getElementById("experiencia-nivel").innerHTML = "Curso: " + xp;
+
 
 
     var esp = document.getElementsByName("devweb");
     var txt = "";
-    var i;
-        for(i=0; i<esp.length;i++){
+        for(let i=0; i<esp.length;i++){
             if(esp[i].checked) {
                 txt = txt + esp[i].value + " ";
             }
         }
-        console.log("porra ", esp);
-        console.log("caralho ", txt);
+        // console.log("porra ", esp);
+        // console.log("caralho ", txt);
             document.getElementById("resultado").style.display='block';
             document.getElementById("conhecimento").innerHTML = "Especialidade: " + txt;
 };
