@@ -17,8 +17,6 @@ function botao(event) {
         document.getElementById("resultado").style.display='block';
             document.getElementById("fcurso").innerHTML = "Experiência: " + dev;
 
-
-
     var exp = document.getElementsByName("exper")
     var xp = "";
     var traco = "-";
@@ -30,8 +28,6 @@ function botao(event) {
         console.log("qualquer coisa", xp);
         document.getElementById("resultado").style.display='block';
             document.getElementById("experiencia-nivel").innerHTML = "Curso: " + xp;
-
-
 
     var esp = document.getElementsByName("devweb");
     var txt = "";

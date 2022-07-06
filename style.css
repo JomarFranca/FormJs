@@ -6,36 +6,110 @@
 
 body {
     height: 100vh;
-    background-color: #ddd;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
+    background-color: #ccc;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+header {
+    margin-bottom: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h1 {
-    padding: 2rem;
-    text-align: center;
-}
-
 form {
+    min-width: 550px;
     flex: 1;
 }
 
+.div-cad {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.div-form label {
+    display: block;
+    clear: both;
+}
+
+.div-form {
+    margin-bottom: 0.7rem;
+    line-height: 150%;
+}
+
+#div-exper {
+    line-height: 150%;
+    margin-bottom: 0.7rem;
+}
+
+input, select, textarea, button {
+    font-size: 1em;
+    border-radius: 4px;
+    padding: 4px;
+    padding-right: 4rem;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    margin: 12px;
+    color:#999;
+}
+
+.label-subtitle {
+    display: block;
+    font-weight: bold;
+    color: #0a4d99;
+}
+
 .resultado {
+    margin-top: 5%;
     font-size: 1rem;
     color: #0f0;
     background-color: #0a4d99;
-    line-height: 2;
-    padding: 10px;
+    line-height: 150%;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
+#btn {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: rgb(1, 83, 1);
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+}
 
+#btn:hover {
+    opacity: 0.3;
+    color: #000;
+}
+
+#btn-clear {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: rgb(3, 3, 121);
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#btn-clear:hover {
+    opacity: 0.3;
+    color: #fff;
+}
 /* RODAPÉ */
 
 footer {
-    width: auto;
+    min-width: 1400px;
     height: 40px;
     background-color: #000;
     display: flex;

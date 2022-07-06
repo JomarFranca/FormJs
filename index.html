@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zaka Cursos</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
 
-    <body>
-        <form action="teste.php" onsubmit="botao(event)" id="form">
-            <h1>Preencha o Formulário de Candidatura:</h1>
-            <label>Nome:</label>
-            <input type="text" id="fname" placeholder="Digite o seu nome:" />
-            <label>Sobrenome:</label>
-            <input type="text" id="fname2" placeholder="Digite o seu sobrenome:" />
-            <br /><br />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaka Cursos</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
 
+<body>
+    <header>
+        <h1>Preencha o formulário</h1>
+        <h1>de candidatura:</h1>
+    </header>
+    <form action="teste.php" onsubmit="botao(event)" id="form">
+        <div class="div-cad">
+            <div class="div-form">
+                <label>Nome:</label>
+                <input type="text" id="fname" placeholder="Digite o seu nome:" />
+            </div>
+            <div class="div-form">
+                <label>Sobrenome:</label>
+                <input type="text" id="fname2" placeholder="Digite o seu sobrenome:" />
+            </div>
+        </div>
+        <div class="div-form">
             <label>Email:</label>
             <input type="email" id="femail" placeholder="Digite seu email:" />
-            <br /><br />
-
-            <label for="curso">Curso:</label>
+        </div>
+        <div class="div-form">
+            <label class="label-subtitle" for="curso">Nível Profissional:</label>
             <select id="curso" name="cursolist">
-                <option value="Java">Java</option>
-                <option value="Javascript">JavaScript</option>
-                <option value="Python">Python</option>
-                <option value="PHP">PHP</option>
-                <option value="C#">C#</option>
+                <option value="Sem Experiência">Sem Experiência</option>
+                <option value="Júnior">Júnior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Sênior">Sênior</option>
+                <option value="Especialista">Especialista</option>
             </select>
-            <br /><br />
-
-            <div id="div-exper">
-                <input type="checkbox" id="exp1" name="exper" value="Sem Experiência" />
-                <label for="exp1">Nunca Trabalhou</label>
-                <input type="checkbox" id="exp2" name="exper" value="Júnior"/>
-                <label for="exp2">Júnior</label>
-                <input type="checkbox" id="exp3" name="exper" value="Pleno"/>
-                <label for="exp3">Pleno</label>
-                <input type="checkbox" id="exp4" name="exper" value="Sênior"/>
-                <label for="exp4">Sênior</label>
-            </div>
-            <br />
-
-            <div class="rad">
-                <label for="rad1">
-                    <input type="radio" id="rad1" name="devweb" value="Front-end"/>Front-end
-                </label>
-                <label for="rad2">
-                    <input type="radio" id="rad2" name="devweb" value="Back-end" />Back-end
-                </label>
-                <label for="rad3">
-                    <input type="radio" id="rad3" name="devweb" value="Fullstack" />Fullstack
-                </label>
-            </div>
-            <br />
+        </div>
+        <div id="div-exper">
+            <label class="label-subtitle" for="">Tecnologias:</label>
+            <input type="checkbox" id="exp1" name="exper" value="Java" />
+            <label for="exp1">Java</label>
+            <input type="checkbox" id="exp2" name="exper" value="JavaScript" />
+            <label for="exp2">JavaScript</label>
+            <input type="checkbox" id="exp3" name="exper" value="PHP" />
+            <label for="exp3">PHP</label>
+            <input type="checkbox" id="exp4" name="exper" value="C#" />
+            <label for="exp4">C#</label>
+            <input type="checkbox" id="exp5" name="exper" value="Python" />
+            <label for="exp4">Python</label>
+        </div>
+        <div class="div-form">
+            <label class="label-subtitle" for="">Tipos de Desenvolvedor:</label>
+            <label for="rad1">
+                <input type="radio" id="rad1" name="devweb" value="Front-end" /> Front-end
+            </label>
+            <label for="rad2">
+                <input type="radio" id="rad2" name="devweb" value="Back-end" /> Back-end
+            </label>
+            <label for="rad3">
+                <input type="radio" id="rad3" name="devweb" value="Fullstack" /> Fullstack
+            </label>
+        </div>
+        <div class="div-form">
             <button id="btn">Enviar</button>
-            <input type="reset" value="Clear" />
-            <br><br><hr><br><br>
-            <div id="resultado" class="resultado" style="display:none">
-                <p id="nome"></p>
-                <p id="mail"></p>
-                <p id="fcurso"></p>
-                <p id="experiencia-nivel"></p>
-                <p id="conhecimento"></p>
-            </div>
-        </form>
+            <input id="btn-clear" type="reset" value="Clear" />
+        </div>
+        <hr />
+        <div id="resultado" class="resultado" style="display: none">
+            <p id="nome"></p>
+            <p id="mail"></p>
+            <p id="fcurso"></p>
+            <p id="experiencia-nivel"></p>
+            <p id="conhecimento"></p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+    <footer>
+        <div class="rodape">
+            <p class="footer-texto">
+                Criação e Desenvolvimento:
+                <a href="https://github.com/Jomarfranca" target="_blank">Jomar A. França
+                </a>
+                2022 -
+                <a href="https://www.linkedin.com/in/jomar-almeida-franca/" target="_blank">Front End Developer</a>
+            </p>
+        </div>
+    </footer>
+</body>
 
-        <script src="script.js"></script>
-
-        <footer>
-            <div class="rodape">
-                <p class="footer-texto">
-                    Criação e Desenvolvimento:
-                    <a href="https://github.com/Jomarfranca" target="_blank"
-                        >Jomar A. França
-                    </a>
-                    2022 -
-                    <a
-                        href="https://www.linkedin.com/in/jomar-almeida-franca/"
-                        target="_blank"
-                        >Front End Developer</a
-                    >
-                </p>
-            </div>
-        </footer>
-    </body>
 </html>
