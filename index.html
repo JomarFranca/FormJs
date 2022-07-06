@@ -17,20 +17,20 @@
     <form action="teste.php" onsubmit="botao(event)" id="form">
         <div class="div-cad">
             <div class="div-form">
-                <label>Nome:</label>
+                <label class="fname">Nome:</label>
                 <input type="text" id="fname" placeholder="Digite o seu nome:" />
             </div>
             <div class="div-form">
-                <label>Sobrenome:</label>
+                <label class="fname2">Sobrenome:</label>
                 <input type="text" id="fname2" placeholder="Digite o seu sobrenome:" />
             </div>
         </div>
         <div class="div-form">
-            <label>Email:</label>
+            <label class="femail">Email:</label>
             <input type="email" id="femail" placeholder="Digite seu email:" />
         </div>
         <div class="div-form">
-            <label class="label-subtitle" for="curso">Nível Profissional:</label>
+            <label class="label-subtitle" for="curso">Nível de conhecimento profissional:</label>
             <select id="curso" name="cursolist">
                 <option value="Sem Experiência">Sem Experiência</option>
                 <option value="Júnior">Júnior</option>
@@ -53,7 +53,7 @@
             <label for="exp4">Python</label>
         </div>
         <div class="div-form">
-            <label class="label-subtitle" for="">Tipos de Desenvolvedor:</label>
+            <label class="label-subtitle" for="">Tipo de desenvolvedor:</label>
             <label for="rad1">
                 <input type="radio" id="rad1" name="devweb" value="Front-end" /> Front-end
             </label>
@@ -66,7 +66,7 @@
         </div>
         <div class="div-form">
             <button id="btn">Enviar</button>
-            <input id="btn-clear" type="reset" value="Clear" />
+            <input id="btn-clear" type="reset" onclick="limpar()" value="Clear" />
         </div>
         <hr />
         <div id="resultado" class="resultado" style="display: none">

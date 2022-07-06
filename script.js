@@ -41,3 +41,7 @@ function botao(event) {
             document.getElementById("resultado").style.display='block';
             document.getElementById("conhecimento").innerHTML = "Especialidade: " + txt;
 };
+
+function limpar(){
+    document.getElementById("resultado").style.display='none';
+}

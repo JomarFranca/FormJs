@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     background-color: #ccc;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,10 @@ input, select, textarea, button {
     cursor: pointer;
 }
 
+input[type=text], input[type=email] {
+    border: 1px solid;
+}
+
 ::placeholder {
     font-size: 0.9rem;
     margin: 12px;
@@ -67,6 +71,13 @@ input, select, textarea, button {
     display: block;
     font-weight: bold;
     color: #0a4d99;
+    font-size: 1.1rem;
+}
+
+.fname, .fname2, .femail {
+    font-weight: bold;
+    color: #0a4d99;
+    font-size: 1.1rem;
 }
 
 .resultado {

@@ -1,12 +1,6 @@
-# FormJs
-Criando um formulário com JavaScript do zero, para fixação do aprendizado. Sem copiar, apenas usando o conhecimento que eu adquirir!
+# 📋FormJs📋
+
 <br />
-
-<p align="center">
-    <img alt="Vídeo" title="Vídeo" src="" />
-</p>
-
-<br/><hr/><br/>
 
 <p align="center">Conteúdo do projeto</p>
 
@@ -20,20 +14,26 @@ Criando um formulário com JavaScript do zero, para fixação do aprendizado. Se
 
 <br/><hr/><br/>
 
+<p align="center">
+    <img alt="Vídeo" title="Vídeo" src="./Zaka-Cursos-6-July-2022.gif" />
+</p>
+
+<br/><hr/><br/>
+
 ### Sobre
 <br/>
 
-<p> A criação de um jogo da velha simples feito com aplicação em ReactJs. Até o momento está utilizável. Tem mais coisas pra aplicar nele, fazendo uma versão 2.0 dele em breve...</p>
+<p> Criando um formulário com JavaScript do zero. Exercício para fixação do aprendizado. Baseado apenas no conhecimento que eu adquirir, e usando ferramentas de pesquisas em fóruns e sites. Criando uma interação direta na página html com o usuário. Estarei personalizando ele pra uma versão 2.0 dele em breve...</p>
 <br/>
 <h3 align="center">
-    🚧 Projeto do Jogo da Velho em construção... 🚧
+    🚧 Projeto do FormJs em construção... 🚧
 </h3>
 <br/><hr/><br/>
 
 ### Pré-requisitos
 <br/>
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://github.com/) e o [Node.js](https://nodejs.org). Além de um editor de para trabalhar com o código como o: [VSCode](https://code.visualstudio.com/).
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://github.com/). Além de um editor de para trabalhar com o código como o: [VSCode](https://code.visualstudio.com/).
 
 <br/><hr/><br/>
 
@@ -42,18 +42,13 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ```bash
 # Clone esse repositório
-$ git clone https://github.com/JomarFranca/JogoDaVelha_Game.git
+$ git clone https://github.com/JomarFranca/FormJs.git
 
 # Acesse a pasta do projeto no terminal
 $ cd [nome da pasta]
 
-# Instale as dependências
-$ npm install aplicação
-
-# Execute a aplicação em modo desenvolvimento
-$ npm start
-
-# por padrão o servidor irá iniciar na porta:3000
+# Inicie ele na pasta do diretório
+$ code . 
 ```
 
 <br/><hr/><br/>
@@ -64,7 +59,6 @@ $ npm start
 <p>As seguintes ferramentas foram usadas na construção do projetos</p>
 
 - [JavaScript](https://www.javascript.com/)
-- [ReactJs](https://reactjs.org/)
 
 <br/><hr/><br/>
 
@@ -72,6 +66,3 @@ $ npm start
 <br/>
 
 Feito por JOMAR FRANÇA - [Acesse meu Likedin](https://www.linkedin.com/in/jomar-almeida-franca/)
-
-Obs. Contribuição de Carlos Júnior
-
